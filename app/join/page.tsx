@@ -118,13 +118,14 @@ export default function JoinPage() {
         </button>
 
         <h1 className="text-3xl font-bold text-white mb-2">ゲームに参加</h1>
-        <p className="text-gray-400 mb-8">ルームコードとニックネームを入力してください</p>
+        <p className="text-gray-400 mb-8">主催者から教えてもらった6桁のコードを入力してください</p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-5">
           <div className="flex flex-col gap-2">
             <label className="text-gray-300 font-medium" htmlFor="roomCode">
               ルームコード
             </label>
+            <p className="text-gray-500 text-xs -mt-1">主催者に6桁のコードを確認してください</p>
             <input
               id="roomCode"
               type="text"

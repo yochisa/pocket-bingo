@@ -67,8 +67,8 @@ export default function HostPage() {
           ← 戻る
         </button>
 
-        <h1 className="text-3xl font-bold text-white mb-2">部屋を作成</h1>
-        <p className="text-gray-400 mb-8">ゲーム設定を入力してください</p>
+        <h1 className="text-3xl font-bold text-white mb-2">ビンゴゲームをはじめる</h1>
+        <p className="text-gray-400 mb-8">参加者に共有する6桁のコードが発行されます</p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
@@ -99,7 +99,7 @@ export default function HostPage() {
             disabled={loading}
             className="w-full py-4 px-6 bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 disabled:bg-gray-600 disabled:cursor-not-allowed text-white text-xl font-bold rounded-2xl shadow-lg transition-colors duration-150"
           >
-            {loading ? '作成中...' : '部屋を作成する'}
+            {loading ? '作成中...' : 'ゲームをはじめる'}
           </button>
         </form>
       </div>
